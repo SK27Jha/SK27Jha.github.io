@@ -9,57 +9,42 @@
 
     <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
     <link rel="stylesheet" href="css/animate.css">
-    
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/magnific-popup.css">
-
     <link rel="stylesheet" href="css/aos.css">
-
     <link rel="stylesheet" href="css/ionicons.min.css">
-    
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
 
-
-
 <style>
-
 /*======================================
 //--//-->   ABOUT
 ======================================*/
-
 .about-mf .box-shadow-full {
   padding-top: 4rem;
   padding-bottom: 4rem;
 }
-
 .about-mf .about-img {
   margin-bottom: 2rem;
 }
-
 .about-mf .about-img img {
   margin-left: 10px;
 }
-
-
 .skill-mf .progress {
-  /* background-color: #cde1f8; */
   margin: .5rem 0 1.2rem 0;
   border-radius: 0;
   height: .7rem;
 }
-
 .skill-mf .progress .progress-bar {
   height: .7rem;
   background-color: #ffbd39;
 }
 .nav-link:hover, .nav-link.active {
-    color: yellow !important;
-    transition: all 0.3s ease;
+  color: yellow !important;
+  transition: all 0.3s ease;
 }
-
 
 /* Animation styles */
 #typing-animation {
@@ -71,10 +56,8 @@
   white-space: nowrap;
   animation: typing 3s steps(20, end) infinite;
 }
-
 #typing-animation:before {
   content: "";
-  /* position: absolute; */
   top: 0;
   left: 0;
   width: 0;
@@ -82,64 +65,119 @@
   background-color: #ccc;
   animation: typing-cursor 0.5s ease-in-out infinite;
 }
-
 @keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
+  from { width: 0; }
+  to { width: 100%; }
 }
-
 @keyframes typing-cursor {
-  from {
-    width: 5px;
-  }
-  to {
-    width: 0;
-  }
+  from { width: 5px; }
+  to { width: 0; }
 }
-
 
 /* project image zoom effect */
-
 .zoom-effect {
   overflow: hidden;
   transition: transform 0.3s ease-out;
 }
-
 .zoom-effect:hover {
   transform: scale(1.1);
 }
 
+/* =======================
+   Responsive Layout Fix
+   Saket Portfolio
+   ======================= */
 
+/* Laptop/Desktop (>=1024px) */
+@media (min-width: 1024px) {
+  .hero .text h1 {
+    font-size: 42px;
+  }
+  #typing-animation {
+    font-size: 26px;
+  }
+  .about-mf .about-img img {
+    max-width: 300px;
+  }
+}
+
+/* Tablet (768px – 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .hero .text h1 {
+    font-size: 32px;
+  }
+  #typing-animation {
+    font-size: 20px;
+  }
+  .about-mf .about-img img {
+    margin: 0 auto;
+    display: block;
+    max-width: 220px;
+  }
+  .resume-wrap, .blog-entry {
+    margin-bottom: 25px;
+  }
+  .contact-info .box {
+    margin-bottom: 20px;
+  }
+}
+
+/* Mobile (<=767px) */
+@media (max-width: 767px) {
+  .hero .text h1 {
+    font-size: 24px;
+    text-align: center;
+  }
+  #typing-animation {
+    font-size: 16px;
+    text-align: center;
+  }
+  .about-mf .about-img img {
+    width: 180px;
+    margin: 0 auto;
+    display: block;
+  }
+  .about-info {
+    text-align: center;
+  }
+  .resume-wrap, .blog-entry {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .contact-info .box {
+    margin-bottom: 15px;
+    text-align: center;
+  }
+}
 </style>
+</head>
 
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Saket Kumar Jha</a>
+      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" 
+              data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" 
+              aria-expanded="false" aria-label="Toggle navigation">
+        <span class="oi oi-menu"></span> Menu
+      </button>
 
-  </head>
-  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
-	  
-	  
-    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
-	    <div class="container">
-	      <a class="navbar-brand" href="index.html">Saket Kumar Jha</a>
-	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-	        <span class="oi oi-menu"></span> Menu
-	      </button>
+      <div class="collapse navbar-collapse" id="ftco-nav">
+        <ul class="navbar-nav nav ml-auto">
+          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
+          <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
+          <li class="nav-item"><a href="#certifications" class="nav-link"><span>Certification</span></a></li>
+          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- baaki tumhara portfolio sections -->
+</body>
+</html>
 
-	      <div class="collapse navbar-collapse" id="ftco-nav">
-	        <ul class="navbar-nav nav ml-auto">
-	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
-	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
-	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
-	          <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
-			   <li class="nav-item"><a href="#certifications" class="nav-link"><span>Certification</span></a></li>
-               <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
-	        </ul>
-	      </div>
-	    </div>
-	  </nav>
 	  <section id="home-section" class="hero">
 		  <div class="home-slider  owl-carousel">
 	       <div class="slider-item ">
